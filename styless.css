@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s, color 0.3s;
+}
+
+.scroll-container {
+  overflow: scroll;
+}
+  
+.container {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+#greeting {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.container1 {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+}
+  
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+  
+.intro-text {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+  
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color:color-mix(in hsl shorter hue, color percentage, color percentage);
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+  
+button:hover {
+    background-color: #ff4757;
+    transform: scale(1.05);
+}
+
+.light {
+  background-color: #99CFFF;
+  color: #000000;
+}
+
+.dark {
+  background-color: linear-gradient ;
+  color: #ffffff;
+  
+}
+
+#themeToggle {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+#themeToggle:hover {
+  background-color: #0056b3;
+}
+
+#countdown {
+    background:#ff6b6b;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 1200px;
+}
+
+.time {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#quote {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color:#9face6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#content {
+  height: 600px; /* Content height larger than container */
+  background: linear-gradient(to bottom, #ffcccc, #ccccff);
+  padding: 10px;
+}
+
+#scrollBar {
+  width: 10px;
+  background: #007BFF;
+  overflow: auto;
+  border-radius: 2px soild blue;
+  position: relative;
+}
+
+ @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
